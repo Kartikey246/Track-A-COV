@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="911.0" style="-fx-background-color: #BC5A2B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.web.Controller">
+<Pane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="911.0" style="-fx-background-color: #BC5A2B;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.web.Controller">
    <children>
-      <Label fx:id="Lb1" layoutX="70.0" layoutY="14.0" prefHeight="56.0" prefWidth="333.0" text="Corona Updates" textFill="#e3f2af">
+      <Label fx:id="Lb1" layoutX="30.0" layoutY="8.0" prefHeight="56.0" prefWidth="333.0" text="Corona Updates" textFill="#1c7bd6">
          <font>
             <Font name="System Bold" size="36.0" />
          </font></Label>
-      <Button fx:id="StatewBT" layoutX="30.0" layoutY="318.0" mnemonicParsing="false" onAction="#StateListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text=" Statewise Status" wrapText="true">
+      <Button fx:id="StatewBT" layoutX="200.0" layoutY="315.0" mnemonicParsing="false" onAction="#StateListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text=" Statewise Status" wrapText="true">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button fx:id="DistwBT" layoutX="309.0" layoutY="318.0" mnemonicParsing="false" onAction="#DistrictListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text="Districtwise Status">
+      <Button fx:id="DistwBT" layoutX="479.0" layoutY="315.0" mnemonicParsing="false" onAction="#DistrictListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text="Districtwise Status">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button fx:id="WebGuiBT" layoutX="309.0" layoutY="442.0" mnemonicParsing="false" onAction="#WebGUIListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text="Contact Details">
+      <Button fx:id="WebGuiBT" layoutX="479.0" layoutY="439.0" mnemonicParsing="false" onAction="#WebGUIListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text="Contact Details">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button fx:id="SympBT" layoutX="30.0" layoutY="442.0" mnemonicParsing="false" onAction="#SympListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text="Symptom Analyser">
+      <Button fx:id="SympBT" layoutX="200.0" layoutY="439.0" mnemonicParsing="false" onAction="#SympListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text="Symptom Analyser">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <ImageView fitHeight="254.0" fitWidth="306.0" layoutX="619.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@cv.jpg" />
-         </image></ImageView>
-      <HBox layoutX="77.0" layoutY="157.0" prefHeight="64.0" prefWidth="450.0">
+      <HBox layoutX="217.0" layoutY="167.0" prefHeight="64.0" prefWidth="450.0">
          <children>
             <Label fx:id="Cases" alignment="CENTER" prefHeight="64.0" prefWidth="162.0" style="-fx-background-color: #105A36; -fx-border-color: #87FFFF;" text="Label" textFill="#dee297">
                <font>
@@ -50,7 +45,7 @@
             </Label>
          </children>
       </HBox>
-      <HBox layoutX="81.0" layoutY="81.0" prefHeight="64.0" prefWidth="442.0">
+      <HBox layoutX="217.0" layoutY="103.0" prefHeight="64.0" prefWidth="450.0">
          <children>
             <Label alignment="CENTER" prefHeight="64.0" prefWidth="158.0" style="-fx-border-color: #105A36; -fx-background-color: #87FFFF;" text="Cases" textFill="#da1515">
                <font>
