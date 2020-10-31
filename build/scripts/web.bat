@@ -82,7 +82,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\web-1.0-SNAPSHOT.jar;%APP_HOME%\lib\ikonli-javafx-11.4.0.jar;%APP_HOME%\lib\ikonli-fontawesome-pack-11.4.0.jar;%APP_HOME%\lib\json-simple-1.1.1.jar;%APP_HOME%\lib\groovy-wslite-0.8.1.jar;%APP_HOME%\lib\javafx-web-11-win.jar;%APP_HOME%\lib\javafx-fxml-11-win.jar;%APP_HOME%\lib\javafx-controls-11-win.jar;%APP_HOME%\lib\javafx-controls-11.jar;%APP_HOME%\lib\javafx-media-11-win.jar;%APP_HOME%\lib\javafx-media-11.jar;%APP_HOME%\lib\javafx-graphics-11-win.jar;%APP_HOME%\lib\javafx-graphics-11.jar;%APP_HOME%\lib\javafx-base-11-win.jar;%APP_HOME%\lib\javafx-base-11.jar;%APP_HOME%\lib\ikonli-core-11.4.0.jar;%APP_HOME%\lib\junit-4.10.jar;%APP_HOME%\lib\groovy-all-1.7.6.jar;%APP_HOME%\lib\hamcrest-core-1.1.jar
+set CLASSPATH=%APP_HOME%\lib\web-1.0-SNAPSHOT.jar;%APP_HOME%\lib\ikonli-javafx-11.4.0.jar;%APP_HOME%\lib\ikonli-fontawesome-pack-11.4.0.jar;%APP_HOME%\lib\json-simple-1.1.1.jar;%APP_HOME%\lib\groovy-wslite-0.8.1.jar;%APP_HOME%\lib\javafx-fxml-11.0.2-win.jar;%APP_HOME%\lib\javafx-web-11.0.2-win.jar;%APP_HOME%\lib\javafx-controls-11.0.2-win.jar;%APP_HOME%\lib\javafx-controls-11.0.2.jar;%APP_HOME%\lib\javafx-media-11.0.2-win.jar;%APP_HOME%\lib\javafx-media-11.0.2.jar;%APP_HOME%\lib\javafx-graphics-11.0.2-win.jar;%APP_HOME%\lib\javafx-graphics-11.0.2.jar;%APP_HOME%\lib\javafx-base-11.0.2-win.jar;%APP_HOME%\lib\javafx-base-11.0.2.jar;%APP_HOME%\lib\ikonli-core-11.4.0.jar;%APP_HOME%\lib\junit-4.10.jar;%APP_HOME%\lib\groovy-all-1.7.6.jar;%APP_HOME%\lib\hamcrest-core-1.1.jar
 
 @rem Execute web
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %WEB_OPTS%  -classpath "%CLASSPATH%" com.web.Main %CMD_LINE_ARGS%

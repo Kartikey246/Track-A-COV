@@ -14,7 +14,7 @@ public class Main extends Application {
 
         Pane root = FXMLLoader.load(getClass().getResource("/com/web/sample.fxml"));
         primaryStage.setTitle("Track a cov");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 911, 583));
         primaryStage.show();
     }
 

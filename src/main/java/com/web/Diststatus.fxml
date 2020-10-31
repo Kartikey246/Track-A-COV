@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="658.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.web.Diststatus">
+   <children>
+      <TableView fx:id="Table" editable="true" layoutX="61.0" layoutY="67.0" prefHeight="558.0" prefWidth="976.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+        <columns>
+          <TableColumn fx:id="Dist" prefWidth="200.0" text="DISTRICT" />
+            <TableColumn fx:id="State" prefWidth="200.0" text="STATE" />
+          <TableColumn minWidth="7.20001220703125" prefWidth="250.0" text="CONFIRMED">
+               <columns>
+                  <TableColumn fx:id="ConfW" prefWidth="125.0" text="TOTAL" />
+                  <TableColumn fx:id="ConfT" editable="false" prefWidth="125.0" text="TODAY" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="Info" prefWidth="298.0" text="FOR FURTHER INFORMATION" />
+        </columns>
+      </TableView>
+      <Label fx:id="Label" alignment="CENTER" layoutX="21.0" layoutY="50.0" prefHeight="18.0" prefWidth="107.0" text="SEARCH">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="SearchDTF" alignment="CENTER" layoutX="128.0" layoutY="47.0" prefHeight="26.0" prefWidth="299.0" promptText="TYPE NAME OF DISTRICT OR STATE" />
+      <Button fx:id="BackBT" layoutX="538.0" layoutY="45.0" mnemonicParsing="false" onAction="#BackListener" prefHeight="26.0" prefWidth="107.0" text="BACK">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

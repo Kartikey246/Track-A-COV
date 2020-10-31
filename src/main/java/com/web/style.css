@@ -1,0 +1,8 @@
+
+#pane{
+    -fx-background-image: url("/com/web/cv.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 911.0 583.0;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}

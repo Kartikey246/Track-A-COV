@@ -1,15 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.Pane?>
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.web.Controller">
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="911.0" style="-fx-background-color: #BC5A2B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.web.Controller">
    <children>
-      <Label fx:id="Lb1" layoutX="21.0" layoutY="113.0" text="Corona Updates" />
-      <TextArea fx:id="GlobalTextArea" layoutX="14.0" layoutY="15.0" prefHeight="92.0" prefWidth="882.0" />
-      <Button fx:id="GlobalBT" layoutX="30.0" layoutY="161.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="143.0" text="Global(India) Status" />
-      <Button fx:id="StatewBT" layoutX="378.0" layoutY="161.0" mnemonicParsing="false" onAction="#StateListener" prefHeight="25.0" prefWidth="111.0" text=" Statewise Status" wrapText="true" />
-      <Button fx:id="DistwBT" layoutX="764.0" layoutY="161.0" mnemonicParsing="false" text="Districtwise Status" />
-      <Button fx:id="RefreshBT" layoutX="53.0" layoutY="532.0" mnemonicParsing="false" onAction="#refreshListener" prefHeight="25.0" prefWidth="143.0" text="Refresh" />
-      <Button fx:id="SympBT" layoutX="378.0" layoutY="532.0" mnemonicParsing="false" onAction="#SympListener" prefHeight="25.0" prefWidth="143.0" text="Symptom Analyser" />
+      <Label fx:id="Lb1" layoutX="70.0" layoutY="14.0" prefHeight="56.0" prefWidth="333.0" text="Corona Updates" textFill="#e3f2af">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+      <Button fx:id="StatewBT" layoutX="30.0" layoutY="318.0" mnemonicParsing="false" onAction="#StateListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text=" Statewise Status" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="DistwBT" layoutX="309.0" layoutY="318.0" mnemonicParsing="false" onAction="#DistrictListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text="Districtwise Status">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="WebGuiBT" layoutX="309.0" layoutY="442.0" mnemonicParsing="false" onAction="#WebGUIListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text="Contact Details">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="SympBT" layoutX="30.0" layoutY="442.0" mnemonicParsing="false" onAction="#SympListener" prefHeight="92.0" prefWidth="206.0" style="-fx-background-color: #B6ABA1;" text="Symptom Analyser">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="254.0" fitWidth="306.0" layoutX="619.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cv.jpg" />
+         </image></ImageView>
+      <HBox layoutX="77.0" layoutY="157.0" prefHeight="64.0" prefWidth="450.0">
+         <children>
+            <Label fx:id="Cases" alignment="CENTER" prefHeight="64.0" prefWidth="162.0" style="-fx-background-color: #105A36; -fx-border-color: #87FFFF;" text="Label" textFill="#dee297">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Deaths" alignment="CENTER" prefHeight="80.0" prefWidth="156.0" style="-fx-background-color: #105A36; -fx-border-color: #87FFFF;" text="Label" textFill="#dee297">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Recovered" alignment="CENTER" prefHeight="64.0" prefWidth="144.0" style="-fx-background-color: #105A36; -fx-border-color: #87FFFF;" text="Label" textFill="#dee297">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="81.0" layoutY="81.0" prefHeight="64.0" prefWidth="442.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="64.0" prefWidth="158.0" style="-fx-border-color: #105A36; -fx-background-color: #87FFFF;" text="Cases" textFill="#da1515">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="64.0" prefWidth="154.0" style="-fx-border-color: #105A36; -fx-background-color: #87FFFF;" text="Deaths" textFill="#da1515">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="64.0" prefWidth="138.0" style="-fx-border-color: #105A36; -fx-background-color: #87FFFF;" text="Recovered" textFill="#da1515">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
    </children>
 </Pane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="727.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.web.Webgui">
+   <children>
+      <WebView fx:id="w" prefHeight="492.0" prefWidth="930.0" />
+      <Button fx:id="btb" layoutX="65.0" layoutY="513.0" mnemonicParsing="false" onAction="#BackListener" prefHeight="57.0" prefWidth="168.0" text="Back" />
+   </children>
+</AnchorPane>
