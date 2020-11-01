@@ -56,7 +56,8 @@ public void StateListener(ActionEvent actionEvent){
     } catch (IOException e) {
         e.printStackTrace();
     }
-    stage.setScene(new Scene(root, 300, 275));
+    stage.setMaximized(true);
+    stage.setScene(new Scene(root));
 
 }
 public void SympListener(ActionEvent actionEvent){
@@ -67,7 +68,7 @@ public void SympListener(ActionEvent actionEvent){
     } catch (IOException e) {
         e.printStackTrace();
     }
-    stage.setScene(new Scene(root, 300, 275));
+    stage.setScene(new Scene(root, 800, 800));
 }
     public void WebGUIListener(ActionEvent actionEvent){
         Stage stage= (Stage) SympBT.getScene().getWindow();
@@ -77,7 +78,7 @@ public void SympListener(ActionEvent actionEvent){
         } catch (IOException e) {
             e.printStackTrace();
         }
-        stage.setScene(new Scene(root, 300, 275));
+        stage.setScene(new Scene(root, 930, 727));
     }
     public void DistrictListener(ActionEvent actionEvent){
         Stage stage= (Stage) SympBT.getScene().getWindow();
@@ -87,7 +88,8 @@ public void SympListener(ActionEvent actionEvent){
         } catch (IOException e) {
             e.printStackTrace();
         }
-        stage.setScene(new Scene(root, 300, 275));
+        stage.setMaximized(true);
+        stage.setScene(new Scene(root));
     }
 
 

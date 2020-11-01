@@ -38,6 +38,6 @@ public class Webgui implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        secondaries.setScene(new Scene(root, 300, 275));
+        secondaries.setScene(new Scene(root, 911, 583));
     }
 }

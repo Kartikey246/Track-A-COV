@@ -164,7 +164,7 @@ public class SymptomController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        secondarystage.setScene(new Scene(root, 300, 275));
+        secondarystage.setScene(new Scene(root, 911, 583));
     }
 }
 

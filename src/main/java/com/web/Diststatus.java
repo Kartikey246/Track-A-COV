@@ -46,7 +46,7 @@ public class Diststatus implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        secondarystage.setScene(new Scene(root, 300, 275));
+        secondarystage.setScene(new Scene(root, 911, 583));
     }
     /*ObservableList<DistTable>List= FXCollections.observableArrayList(
             new DistTable("Bareilly","Uttarpradesh","25000","2500","hushu"),

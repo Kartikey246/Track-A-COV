@@ -49,7 +49,7 @@ public class Statewise extends com.web.StateData implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        stage.setScene(new Scene(root, 300, 275));
+        stage.setScene(new Scene(root, 911, 583));
     }
 
         /*ObservableList<StateTable> list = FXCollections.observableArrayList(
