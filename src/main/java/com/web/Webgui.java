@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 
+import javafx.scene.layout.Pane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
@@ -32,7 +33,7 @@ public class Webgui implements Initializable {
     }
     public void BackListener(ActionEvent actionEvent){
         Stage secondaries= (Stage) btb.getScene().getWindow();
-        AnchorPane root=null;
+        Pane root=null;
         try {
             root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         } catch (IOException e) {

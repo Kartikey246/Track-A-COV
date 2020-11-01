@@ -68,6 +68,7 @@ public void SympListener(ActionEvent actionEvent){
     } catch (IOException e) {
         e.printStackTrace();
     }
+    stage.setMaximized(true);
     stage.setScene(new Scene(root, 800, 800));
 }
     public void WebGUIListener(ActionEvent actionEvent){
@@ -78,6 +79,7 @@ public void SympListener(ActionEvent actionEvent){
         } catch (IOException e) {
             e.printStackTrace();
         }
+        stage.setMaximized(true);
         stage.setScene(new Scene(root, 930, 727));
     }
     public void DistrictListener(ActionEvent actionEvent){
