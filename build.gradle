@@ -29,4 +29,4 @@ javafx {
     version = "11.0.2"
     modules = [ 'javafx.base','javafx.controls','javafx.fxml','javafx.graphics','javafx.web']
 }
-mainClassName="com.web.Main"
+mainClassName="com.web.Launch"
